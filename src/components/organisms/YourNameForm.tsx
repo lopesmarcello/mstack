@@ -1,9 +1,9 @@
 "use client";
 
 import { UseFormRegister } from "react-hook-form";
-import { Button } from "../atoms/button";
 import { TextField } from "../atoms/textField";
 import { HelloFormFields } from "@/app/(pages)/(home)/components/HelloForm";
+import { LoadingButton } from "../molecules/loadingButton";
 
 interface YourNameForm {
   isLoading: boolean;
@@ -14,9 +14,9 @@ export const YourNameForm = ({ isLoading, register }: YourNameForm) => {
   return (
     <>
       <TextField placeholder="Your name" {...register("name")} />
-      <Button type="submit" disabled={isLoading}>
-        {isLoading ? "Loading..." : "Hello"}
-      </Button>
+      <LoadingButton loading={isLoading} type="submit" disabled={isLoading}>
+        Hello
+      </LoadingButton>
     </>
   );
 };

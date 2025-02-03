@@ -5,7 +5,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { sendName } from "../utils";
 import { redirect } from "next/navigation";
-import { YourNameForm } from "@/components/molecules/YourNameForm";
+import { YourNameForm } from "@/components/organisms/YourNameForm";
 
 export interface HelloFormFields {
   name: string;
