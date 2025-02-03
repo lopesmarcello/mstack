@@ -49,3 +49,25 @@ A arquitetura BFF (Backend For Frontend) é uma abordagem que cria uma camada de
 - **[Spinners React](https://www.npmjs.com/package/spinners-react)**: Uma coleção de componentes de spinners (indicadores de carregamento) que podem ser usados para melhorar a experiência do usuário durante operações assíncronas. Esses spinners são leves e altamente personalizáveis.
 
 Essas dependências são totalmente opcionais e foram incluídas apenas para demonstração no projeto exemplo, mas podem ser facilmente removidas ou substituídas conforme necessário.
+
+## Estrutura de pastas
+
+```
+mstack/
+├── node_modules/ # Pasta padrão de projetos JS contendo suas dependências
+├── public/ # Pasta pública do Next.JS
+├── src/ # Código-fonte do frontend da aplicação
+│ ├── app/ # Next.JS App Router
+│ │ ├── (pages)/ # Pasta que centraliza as páginas da aplicação
+│ │ │ ├── (home)/ # Maneira simples de centralizar a página Home e arquivos relacionados
+│ │ │ ├── layout.tsx # Layout padrão da aplicação
+│ │ ├── api/ # Rotas de API (BFF)
+│ │ ├── favicon.ico # Favicon da aplicação
+│ │ ├── globals.css # CSS Global da aplicação
+│ ├── common/ # Pasta de arquivos compartilhados por toda aplicação
+│ │ ├── contexts/ # Contextos e Providers
+│ │ ├── utils/ # utilitários gerais
+│ ├── components/ # Pasta que centraliza componentes (Atom Design System)
+│
+└── README.md # Documentação principal do repositório
+```
