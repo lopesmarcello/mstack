@@ -124,7 +124,7 @@ The BFF (Backend For Frontend) architecture is an approach that creates a specif
 
 - **[Spinners React](https://www.npmjs.com/package/spinners-react)**: A collection of spinner components (loading indicators) that can be used to enhance the user experience during asynchronous operations. These spinners are lightweight and highly customizable.
 
--- **[React Hook Form](https://react-hook-form.com/)**: A lightweight and efficient library for managing forms in React applications. It leverages hooks to simplify form validation, error handling, and submission, providing a smoother and less verbose development experience compared to other solutions.
+- **[React Hook Form](https://react-hook-form.com/)**: A lightweight and efficient library for managing forms in React applications. It leverages hooks to simplify form validation, error handling, and submission, providing a smoother and less verbose development experience compared to other solutions.
 
 These dependencies are entirely optional and were included only for demonstration purposes in the example project, but they can be easily removed or replaced as needed.
 
