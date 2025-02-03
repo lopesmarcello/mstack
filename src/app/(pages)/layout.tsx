@@ -4,6 +4,7 @@ import "../globals.css";
 import { ReactQueryProvider } from "@/common/contexts/ReactQueryProvider";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { SocialsDropdown } from "@/components/organisms/SocialsDropdown";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,9 @@ export default function RootLayout({
       >
         <ReactQueryProvider>
           <ToastContainer autoClose={2000} closeOnClick />
+          <div className="absolute top-4 left-4 ">
+            <SocialsDropdown />
+          </div>
           {children}
         </ReactQueryProvider>
       </body>
