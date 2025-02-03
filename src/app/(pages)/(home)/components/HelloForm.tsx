@@ -1,19 +1,18 @@
 "use client";
-import { Button } from "@/components/atoms/button";
-import { TextField } from "@/components/atoms/textField";
+
 import { useMutation } from "@tanstack/react-query";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { sendName } from "../utils";
 import { redirect } from "next/navigation";
+import { YourNameForm } from "@/components/molecules/YourNameForm";
 
-interface FormFields {
+export interface HelloFormFields {
   name: string;
 }
 
 export const HelloForm = () => {
-  // const router = useRouter();
-  const { register, handleSubmit, watch } = useForm<FormFields>();
+  const { register, handleSubmit, watch } = useForm<HelloFormFields>();
   const name = watch("name");
 
   const redirectAfterToast = (name: string) => {
@@ -39,7 +38,7 @@ export const HelloForm = () => {
   });
   const isLoading = mutation.isPending || mutation.isSuccess;
 
-  const onSubmit: SubmitHandler<FormFields> = (data) => {
+  const onSubmit: SubmitHandler<HelloFormFields> = (data) => {
     if (!data.name) {
       toast.error("Name required!");
       return;
@@ -49,10 +48,7 @@ export const HelloForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2 gap-4">
-      <TextField placeholder="Your name" {...register("name")} />
-      <Button type="submit" disabled={isLoading}>
-        {isLoading ? "Loading..." : "Hello"}
-      </Button>
+      <YourNameForm register={register} isLoading={isLoading} />
     </form>
   );
 };
