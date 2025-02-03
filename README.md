@@ -1,6 +1,7 @@
 # mStack
 
-[Preview: mstack-starter.vercel.app](https://mstack-starter.vercel.app)
+🖥 ️[Preview: mstack-starter.vercel.app](https://mstack-starter.vercel.app)
+🌐 [English Documentation](https://github.com/lopesmarcello/mstack?tab=readme-ov-file#english-version-)
 
 Projeto desenvolvido à fim de servir como projeto starter já configurado para projetos Next.JS baseado em uma arquitetura de BFF (Backend For Front-End) e Atom Design System.
 
