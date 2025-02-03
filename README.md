@@ -50,6 +50,8 @@ A arquitetura BFF (Backend For Frontend) é uma abordagem que cria uma camada de
 
 - **[Spinners React](https://www.npmjs.com/package/spinners-react)**: Uma coleção de componentes de spinners (indicadores de carregamento) que podem ser usados para melhorar a experiência do usuário durante operações assíncronas. Esses spinners são leves e altamente personalizáveis.
 
+-- **[React Hook Form](https://react-hook-form.com/)**: Uma biblioteca leve e eficiente para gerenciamento de formulários em aplicações React. Ela utiliza hooks para simplificar a validação, manipulação de erros e submissão de formulários, oferecendo uma experiência de desenvolvimento mais fluida e menos verbosa em comparação com outras soluções.
+
 Essas dependências são totalmente opcionais e foram incluídas apenas para demonstração no projeto exemplo, mas podem ser facilmente removidas ou substituídas conforme necessário.
 
 ## Estrutura de pastas
@@ -121,6 +123,8 @@ The BFF (Backend For Frontend) architecture is an approach that creates a specif
 - **[React Toastify](https://fkhadra.github.io/react-toastify/introduction/)**: A library for displaying notifications (toasts) in a simple and elegant way. It is highly customizable and easy to integrate, providing a richer user experience.
 
 - **[Spinners React](https://www.npmjs.com/package/spinners-react)**: A collection of spinner components (loading indicators) that can be used to enhance the user experience during asynchronous operations. These spinners are lightweight and highly customizable.
+
+-- **[React Hook Form](https://react-hook-form.com/)**: A lightweight and efficient library for managing forms in React applications. It leverages hooks to simplify form validation, error handling, and submission, providing a smoother and less verbose development experience compared to other solutions.
 
 These dependencies are entirely optional and were included only for demonstration purposes in the example project, but they can be easily removed or replaced as needed.
 
