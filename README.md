@@ -71,3 +71,75 @@ mstack/
 │
 └── README.md # Documentação principal do repositório
 ```
+
+# English Version 🌐
+
+Project developed to serve as a starter project already configured for Next.JS projects based on a BFF (Backend For Front-End) architecture and Atom Design System.
+
+The project dependencies were chosen considering that high market adherence enables content research, bug support, and access to updates.
+
+The initial project is an overkill for simple applications like this one. However, the project's goal is to be a starter providing a folder structure, initial configurations, and examples of the concepts that will be explained in this README.
+
+## To install:
+
+Clone the project or run the following command in your terminal:
+
+```
+npx mstack-script
+```
+
+## Technology Choices
+
+### Next.JS
+
+Starting with the most impactful choice, the use of the [Next.JS](https://nextjs.org/) framework.
+
+As [React's own documentation recommends](https://react.dev/learn/start-a-new-react-project#can-i-use-react-without-a-framework), we start with a framework to provide robust solutions aligned with the market and React ecosystem.
+
+The choice of the Next.JS framework was made considering the framework's structure enabling the implementation of the [BFF (Backend For Frontend)](https://samnewman.io/patterns/architectural/bff/) architecture, chosen to structure the application's request layer with ease.
+
+### BFF Architecture
+
+The BFF (Backend For Frontend) architecture is an approach that creates a specific backend layer for each frontend, allowing the frontend to receive data already formatted and optimized for its needs. This reduces complexity in the frontend, improves performance, and facilitates maintenance, as the backend can evolve independently of the frontend.
+
+### Tanstack Query
+
+[Tanstack Query](https://tanstack.com/query/latest) (formerly known as React Query) is a library for state management and data caching in React applications. It simplifies the process of fetching, storing, and synchronizing data between the frontend and backend, and offers features like automatic refetching, pagination, and error handling. This improves efficiency and user experience, especially in applications that rely on many asynchronous requests.
+
+### Radix-UI, TailwindCSS, and Atom Design System
+
+- **[Radix-UI](https://www.radix-ui.com/)**: A library of accessible and highly customizable components that follows best practices in accessibility and design. It allows for the creation of consistent and functional interfaces without sacrificing flexibility.
+
+- **[TailwindCSS](https://tailwindcss.com/)**: A utility-first CSS framework that allows for the quick and efficient creation of modern, responsive designs. With Tailwind, it's possible to style components directly in the HTML, reducing the need to write custom CSS and keeping the code cleaner.
+
+- **[Atom Design System](https://atomicdesign.bradfrost.com/)**: A design approach that organizes components into atoms, molecules, and organisms, promoting reusability and consistency in the user interface. This facilitates the creation of modular and scalable interfaces, and improves collaboration between designers and developers.
+
+### Optional Dependencies Used in This Project
+
+- **[React Toastify](https://fkhadra.github.io/react-toastify/introduction/)**: A library for displaying notifications (toasts) in a simple and elegant way. It is highly customizable and easy to integrate, providing a richer user experience.
+
+- **[Spinners React](https://www.npmjs.com/package/spinners-react)**: A collection of spinner components (loading indicators) that can be used to enhance the user experience during asynchronous operations. These spinners are lightweight and highly customizable.
+
+These dependencies are entirely optional and were included only for demonstration purposes in the example project, but they can be easily removed or replaced as needed.
+
+## Folder Structure
+
+```
+mstack/
+├── node_modules/ # Default folder for JS projects containing their dependencies
+├── public/ # Next.JS public folder
+├── src/ # Frontend application source code
+│ ├── app/ # Next.JS App Router
+│ │ ├── (pages)/ # Folder that centralizes the application's pages
+│ │ │ ├── (home)/ # Simple way to centralize the Home page and related files
+│ │ │ ├── layout.tsx # Default application layout
+│ │ ├── api/ # API routes (BFF)
+│ │ ├── favicon.ico # Application favicon
+│ │ ├── globals.css # Global CSS of the application
+│ ├── common/ # Folder for files shared across the application
+│ │ ├── contexts/ # Contexts and Providers
+│ │ ├── utils/ # General utilities
+│ ├── components/ # Folder that centralizes components (Atom Design System)
+│
+└── README.md # Main repository documentation
+```
